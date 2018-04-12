@@ -5,5 +5,9 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
-PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %D %T % %{$reset_color%}'
+
+JUNKFOOD_LOCA_="%{$fg_bold[cyan]%}%~%{$reset_color%}"
+
+PROMPT='${ret_status}$JUNKFOOD_LOCA_%  $(git_prompt_info)% %{$fg_bold[blue]%} %D %T %{$reset_color%}'
+# PROMPT='${ret_status}$JUNKFOOD_LOCA_%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %D %T % %{$reset_color%}'
 
